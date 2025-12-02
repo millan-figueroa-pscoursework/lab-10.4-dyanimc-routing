@@ -102,12 +102,12 @@ export const posts = [
 
 ## 🌐 Routing Overview
 
-### Route Description
-
-/blog Blog index page with links
-/blog/:slug Dynamic route displaying a selected post
-/login Page to trigger login()
-/admin Protected dashboard for authenticated users
+| <b>Route</b>  | <b>Description</b>                          |
+| ------------- | ------------------------------------------- |
+| `/blog`       | Blog index page with links                  |
+| `/blog/:slug` | Dynamic route displaying a selected post    |
+| `/login`      | Page to trigger `login()`                   |
+| `/admin`      | Protected dashboard for authenticated users |
 
 <br>
 
