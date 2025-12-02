@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import BlogIndexPage from "../pages/BlogIndexPage.tsx";
-import BlogPostPage from "../pages/BlogPostPage";
+import BlogIndexPage from "./pages/BlogIndexPage";
+import BlogPostPage from "./pages/BlogPostPage";
 
 function App() {
   return (

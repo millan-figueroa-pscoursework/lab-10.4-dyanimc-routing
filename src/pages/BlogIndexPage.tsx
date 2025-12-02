@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { posts } from "../lib/posts";
+import { posts } from "../../lib/posts";
 
 export default function BlogIndexPage() {
   return (
