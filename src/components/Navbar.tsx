@@ -11,17 +11,32 @@ export default function Navbar() {
   };
 
   return (
-    <nav style={{ display: "flex", gap: "1rem", padding: "1rem 0" }}>
-      <Link to="/blog">Blog</Link>
+    <nav className="flex items-center justify-between px-6 py-3 border-b border-gray-200 bg-white">
+      {/* LEFT SIDE */}
+      <Link to="/blog" className="text-lg font-medium hover:underline">
+        Blog
+      </Link>
 
-      {isAuthenticated ? (
-        <>
-          <Link to="/admin">Admin</Link>
-          <button onClick={handleLogout}>Log Out</button>
-        </>
-      ) : (
-        <Link to="/login">Log In</Link>
-      )}
+      {/* RIGHT SIDE */}
+      <div className="flex items-center gap-4">
+        {isAuthenticated ? (
+          <>
+            <Link to="/admin" className="hover:underline">
+              Admin
+            </Link>
+            <button
+              onClick={handleLogout}
+              className="bg-violet-500 text-white px-3 py-1 rounded hover:bg-red-600"
+            >
+              Log Out
+            </button>
+          </>
+        ) : (
+          <Link to="/login" className="hover:underline">
+            Log In
+          </Link>
+        )}
+      </div>
     </nav>
   );
 }
