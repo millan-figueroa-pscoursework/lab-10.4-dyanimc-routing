@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { posts } from "../lib/posts.ts";
+import { posts } from "../lib/posts";
 
 export default function BlogIndexPage() {
   return (
-    <div>
+    <main>
       <h1>Blog Posts</h1>
-
       <ul>
         {posts.map((post) => (
           <li key={post.id}>
@@ -13,6 +12,6 @@ export default function BlogIndexPage() {
           </li>
         ))}
       </ul>
-    </div>
+    </main>
   );
 }
