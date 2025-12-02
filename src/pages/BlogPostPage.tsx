@@ -9,7 +9,7 @@ export default function BlogPostPage() {
   if (!post) {
     return (
       <PageContainer>
-        <h2 className="text-xl text-red-600 font-medium">Post not found.</h2>
+        <h2 className="text-xl text-violet-400 font-medium">Post not found.</h2>
       </PageContainer>
     );
   }
