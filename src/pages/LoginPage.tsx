@@ -1,20 +1,27 @@
-import { useNavigate } from "react-router-dom";
+import PageContainer from "../components/PageContainer";
 import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
   const { login } = useAuth();
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    login(); // set isAuthenticated = true
-    navigate("/admin"); // redirect after login (you can change this)
+    login();
+    navigate("/admin");
   };
 
   return (
-    <main>
-      <h1>Login</h1>
-      <p>You must log in to access the admin dashboard.</p>
-      <button onClick={handleLogin}>Log In</button>
-    </main>
+    <PageContainer>
+      <h1 className="text-3xl font-bold mb-6">Login</h1>
+      <p className="mb-6">You must log in to access the Admin Dashboard.</p>
+
+      <button
+        onClick={handleLogin}
+        className="bg-violet-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+      >
+        Log In
+      </button>
+    </PageContainer>
   );
 }
