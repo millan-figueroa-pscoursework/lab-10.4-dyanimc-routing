@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import NotFoundPage from "./pages/NotFoundPage";
 import BlogIndexPage from "./pages/BlogIndexPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import LoginPage from "./pages/LoginPage";
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="*" element={<NotFoundPage />} />
         <Route path="/blog" element={<BlogIndexPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/login" element={<LoginPage />} />

@@ -88,4 +88,5 @@
 
 ## Task 7 — Login Page (`/login`)
 
-- [ ] Create `LoginPage` component (e.g., `src/pages/LoginPage.t
+- [x] Create `LoginPage` component (e.g., `src/pages/LoginPage.tsx)
+- [x] Add minimal styles and a README outlining project features
